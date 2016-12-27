@@ -409,6 +409,7 @@ transform: translate(0px,1000px);
 .jingli_info{position:absolute;width:350px;left:30px;text-align:left;font-size:14px;}
 
 /*个人技能*/
+.bg_fff{background:url(../images/bg_jn.jpg)}
 .img_bg{background-image:url(../images/bg_jn.png);background-repeat:no-repeat;}
 .title_jn{background-position:center top;display:inline-block;height:41px;width:167px;
 transform: scale(0);
@@ -484,7 +485,7 @@ transform: translate(0px,200px);
 -o-transform: translate(0px,200px);
 -ms-transform: translate(0px,200px);
 }
-.txt_intro{color:#e6b33d;line-height:30px;opacity:0;
+.txt_intro{color:#5e7289;line-height:30px;opacity:0;
 transform: translate(0px,1500px);
 -moz-transform: translate(0px,1500px);
 -webkit-transform: translate(0px,1500px);
@@ -558,6 +559,7 @@ transform: scale(1.6);
 	filter:alpha(opacity=80); /*IE滤镜，透明度50%*/
 	-moz-opacity:0.8; /*Firefox私有，透明度50%*/
 	opacity:0.8;/*其他，透明度50%*/
+	background-image: url(../images/yangpi.jpg);
 	background-size:100% 100%;
 	animation: fade-in;
 	animation-duration: 5s;
@@ -579,7 +581,7 @@ transform: scale(1.6);
 	-webkit-animation:xthree 4s  linear infinite;
 }
 
-.xiangmu h3{
+.xiangmu h4{
 	color: #e55b01;
 }
 
@@ -587,12 +589,8 @@ transform: scale(1.6);
 	word-break:break-all;
 	text-align: left;
 	text-indent:20px;
-	color:#c3c3c3;
+	color:#555;
 	padding:20px 40px;
-}
-
-.xiangmu p a{
-	color:#3da371;
 }
 
 @-moz-keyframes xone 

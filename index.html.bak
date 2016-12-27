@@ -62,7 +62,7 @@
                 <p class="mb30">
                     <span class="title_1">教育经历</span>
                 </p>
-				<div class="wrap_time m_center cf jiaoyu">
+				<div class="wrap_time m_center cf">
                     <span class="time_start"></span><span class="time_end"></span>
                     <div class="jingli time_1">
                         <p class="jingli_time">2011-09 — 2015-06</p>
@@ -89,7 +89,7 @@
         <!--个人技能-->
         <div class="section bg_fff m_center align_center">
             <p class="mb30">
-                <span class="title_1">个人技能</span>
+                <span class="img_bg title_jn"></span>
             </p>
             <div class="list_icon">
                 <div style="">
@@ -116,18 +116,18 @@
             </p>
             <div class="container container_100 m_center cf last ">
                 <div class="xiangmu x-one">
-                    <h3>现货微盘</h3>
+                    <h4>现货微盘</h4>
                     <p>项目描述：实现在公众号上进行现货交易的平台，具有行情展示、资讯展示、夺宝行动、下单交易、申购功能等模块。实现门槛很低的微盘平台。平台的框架为前端：jQuery+requireJs+MUI框架、后端：SpringMVC+Hibernate+Spring、数据库：redis+mysql。</p>
 					<p>我的职责：负责前端框架的搭建、通用工具插件开发，负责部分静态页面的实现，负责微信公众平台功能的开发、通过HBuilder+Mui对项目进行改造，使得安卓、IOS的app具有微信公众平台的功能（IOS、应用宝已上架）、业务上负责用户系统的开发与维护。</p>
                 </div>
                 <div class="xiangmu x-two">
-                    <h3>个人博客</h3>
+                    <h4>个人博客</h4>
                     <p>项目描述：具有评论功能的个人博客实现，主要框架为Node+Mongodb+React+webpack+sass</p>
 					<p>我的职责：完成从页面布局、代码编写、申请域名、服务器、到博客正式上线的所有功能。并持续对博客进行升级与维护。</p>
 					<p>博客地址：<a href="http://www.zymlj.net">http://www.zymlj.net</a>。</p>
                 </div>
                 <div class="xiangmu x-three">
-                    <h3>虚拟运营商掌上营业厅、微信营业厅</h3>
+                    <h4>虚拟运营商掌上营业厅、微信营业厅</h4>
                     <p>项目描述：2014年国家下发了虚拟运营商牌照、为其中的民生、优酷、华翔提供了具有开户、充值、业务办理、套餐查询等功能的掌上营业厅及微信营业厅。框架为SpringMVC+Dubbo+Jquery+Ajax+redis。</p>
 					<p>我的职责：负责APP内嵌H5页面功能的实现，为客户端提供数据接口。负责微信营业厅的全部功能开发（包括充值、账单、业务办理）。</p>
                 </div>    
@@ -159,129 +159,21 @@
     </div>
 </body>
 <script>
-    			var data = {
+    var data = {
 				labels: ["HTML", "CSS", "JavaScript", "Nodejs", "Java"],
-				pointStrokeColor: "#fff",
 				datasets: [
 
 					{
-						fillColor: "#264863",
-						strokeColor: "#fff",
-						pointColor: "#fff",
+						fillColor: "rgba(151,187,205,0.5)",
+						strokeColor: "rgba(151,187,205,1)",
+						pointColor: "rgba(151,187,205,1)",
+						pointStrokeColor: "#fff",
 						data: [75, 70, 85, 60, 80]
 					}
 				]
-
 			};
-			var defaults = {
-
-				//Boolean - If we show the scale above the chart data			
-				scaleOverlay: false,
-
-				//Boolean - If we want to override with a hard coded scale
-				scaleOverride: false,
-
-				//** Required if scaleOverride is true **
-				//Number - The number of steps in a hard coded scale
-				scaleSteps: null,
-				//Number - The value jump in the hard coded scale
-				scaleStepWidth: null,
-				//Number - The centre starting value
-				scaleStartValue: null,
-
-				//Boolean - Whether to show lines for each scale point
-				scaleShowLine: true,
-
-				//String - Colour of the scale line	
-				scaleLineColor: "#264863",
-
-				//Number - Pixel width of the scale line	
-				scaleLineWidth: 1,
-
-				//Boolean - Whether to show labels on the scale	
-				scaleShowLabels: false,
-
-				//Interpolated JS string - can access value
-				scaleLabel: "<%=value%>",
-
-				//String - Scale label font declaration for the scale label
-				scaleFontFamily: "'Arial'",
-
-				//Number - Scale label font size in pixels	
-				scaleFontSize: 12,
-
-				//String - Scale label font weight style	
-				scaleFontStyle: "normal",
-
-				//String - Scale label font colour	
-				scaleFontColor: "#666",
-
-				//Boolean - Show a backdrop to the scale label
-				scaleShowLabelBackdrop: true,
-
-				//String - The colour of the label backdrop	
-				scaleBackdropColor: "rgba(255,255,255,0.75)",
-
-				//Number - The backdrop padding above & below the label in pixels
-				scaleBackdropPaddingY: 2,
-
-				//Number - The backdrop padding to the side of the label in pixels	
-				scaleBackdropPaddingX: 2,
-
-				//Boolean - Whether we show the angle lines out of the radar
-				angleShowLineOut: true,
-
-				//String - Colour of the angle line
-				angleLineColor: "#264863",
-
-				//Number - Pixel width of the angle line
-				angleLineWidth: 1,
-
-				//String - Point label font declaration
-				pointLabelFontFamily: "'Arial'",
-
-				//String - Point label font weight
-				pointLabelFontStyle: "normal",
-
-				//Number - Point label font size in pixels	
-				pointLabelFontSize: 12,
-
-				//String - Point label font colour	
-				pointLabelFontColor: "#5e7289",
-
-				//Boolean - Whether to show a dot for each point
-				pointDot: true,
-
-				//Number - Radius of each point dot in pixels
-				pointDotRadius: 3,
-
-				//Number - Pixel width of point dot stroke
-				pointDotStrokeWidth: 1,
-
-				//Boolean - Whether to show a stroke for datasets
-				datasetStroke: true,
-
-				//Number - Pixel width of dataset stroke
-				datasetStrokeWidth: 2,
-
-				//Boolean - Whether to fill the dataset with a colour
-				datasetFill: true,
-
-				//Boolean - Whether to animate the chart
-				animation: true,
-
-				//Number - Number of animation steps
-				animationSteps: 60,
-
-				//String - Animation easing effect
-				animationEasing: "easeOutQuart",
-
-				//Function - Fires when the animation is complete
-				onAnimationComplete: null
-
-			}
 			var ctx = document.getElementById("myChart").getContext("2d");
-			var myNewChart = new Chart(ctx).Radar(data,defaults);
+			var myNewChart = new Chart(ctx).Radar(data);
 </script>
 
 </html>

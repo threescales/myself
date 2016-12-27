@@ -45,7 +45,7 @@ $(document).ready(function(e) {
 	
 	$(function(){
 		$('#js_fullpage').fullpage({
-			slidesColor: ['#212325', '#fff', '#fff', '#ebfbff'],
+			slidesColor: ['#212325', '#18222e', '#212325', '#18222e'],
 			anchors: ['page1', 'page2', 'page3', 'page4'],
 			menu: '#menu',
 			afterRender:function(){
